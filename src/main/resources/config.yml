@@ -1,0 +1,50 @@
+tutorials:
+  start:
+    return-point: world/-59/103/11
+    spawn-point: world/-59/88/11
+    objectives:
+      1:
+        block-click:
+          action:
+            commands:
+              - "give %player% diamond 1"
+              - "tell %player% Noice"
+            sound: BLOCK_ANVIL_USE
+          click-type: RIGHT_CLICK
+          location: world/-63/88/11
+          text:
+            - "Please click the block on your right"
+      2:
+        npc-click:
+          action:
+            commands:
+              - "give %player% emerald 1"
+              - "tell %player% Clicked block"
+            sound: BLOCK_ANVIL_USE
+          id: 0
+          text:
+            - "Please click the npc on your left"
+      3:
+        item-click:
+          action:
+            commands:
+              - "give %player% diamond 1"
+            sound: BLOCK_ANVIL_USE
+          click-type: RIGHT_CLICK
+          item-stack:
+            display-name: "&cClick me"
+            lore:
+              - "&7Yes"
+            material: STICK
+          location: world/-8/8/8
+          text:
+            - "Please click the item in your inventory"
+      4:
+        pressure-plate:
+          action:
+            commands:
+              - "give %player% diamond 1"
+            sound: BLOCK_ANVIL_USE
+          location: world/-59/88/7
+          text:
+            - "Step on the pressure plate"

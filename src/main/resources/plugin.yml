@@ -1,0 +1,7 @@
+name: Tutorials
+version: ${project.version}
+main: com.gb6.tutorials.Tutorials
+authors: [GB6]
+commands:
+  tutorial:
+    description: "Default command for the Tutorials plugin"
